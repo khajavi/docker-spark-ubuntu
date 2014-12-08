@@ -1,5 +1,5 @@
-FROM sequenceiq/hadoop-docker:2.6.0
-MAINTAINER SequenceIQ
+FROM sequenceiq/hadoop-ubuntu:2.5.2
+MAINTAINER Milad Khajavi
 
 RUN curl -s http://d3kbcqa49mib13.cloudfront.net/spark-1.1.1-bin-hadoop2.4.tgz | tar -xz -C /usr/local/
 RUN cd /usr/local && ln -s spark-1.1.1-bin-hadoop2.4 spark
